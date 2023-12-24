@@ -53,7 +53,7 @@ print("Uploading to Channel...")
 api_id = '' # Your api_id
 api_hash = '' # Your api_hash
 phone_number = 'session_1' # Your phone number
-channel_username = 'kanalsotman'
+channel_username = 'kanalsotman'  # Your Channel name
 file_name = 'audio.mp3'
 caption = "نام اثر: " + titlevideo + "\n"+"\n"+"نام کانال: " + authorvideo
 
