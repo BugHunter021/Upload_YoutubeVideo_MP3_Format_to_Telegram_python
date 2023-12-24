@@ -50,10 +50,10 @@ audiofile.tag.save()
 # ----- UPLOAD to Channel
 print("Uploading to Channel...")
 
-api_id = '' # Your api_id
-api_hash = '' # Your api_hash
+api_id = '21348' # Your api_id
+api_hash = '64f47180565f69e1eebac574354f902c' # Your api_hash
 phone_number = 'session_1' # Your phone number
-channel_username = 'kanalsotman'  # Your Channel name
+channel_username = 'ketabbazmp3'
 file_name = 'audio.mp3'
 caption = "نام اثر: " + titlevideo + "\n"+"\n"+"نام کانال: " + authorvideo
 
@@ -65,5 +65,10 @@ if not client.is_user_authorized():
     client.sign_in(phone_number, input('Enter the code: '))
 
 async with client:
-  await client.send_file(channel_username, file_name, caption = caption)
+  await client.send_file(channel_username, file_name, caption = caption, video_note=True)
   print("Upload successfully")
+
+if os.path.exists(file_name):
+  os.remove(file_name)
+  os.remove('video.mp4')
+  print("Temp file deleted")
