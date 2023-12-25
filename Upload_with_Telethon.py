@@ -52,11 +52,11 @@ audiofile.tag.save()
 print("Uploading to Channel...")
 
 api_id = '21348' # Your api_id
-api_hash = '' # Your api_hash
+api_hash = '64f47180565f69e1eebac574354f902c' # Your api_hash
 phone_number = 'session_1' # Your phone number
 channel_username = 'ketabbazmp3'
 #file_name = titlevideo+'.mp3'
-caption = "نام اثر: " + titlevideo + "\n"+"\n"+"نام کانال یوتیوب: " + authorvideo + "\n"+"\n"+"@ketabbazmp3"
+caption = "🎤نام اثر: " + titlevideo + "\n"+"\n"+"🎥نام کانال یوتیوب: " + authorvideo + "\n"+"\n"+"@ketabbazmp3"
 
 client = TelegramClient(phone_number, api_id, api_hash)
 client.connect()
