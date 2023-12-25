@@ -30,6 +30,7 @@ def YutDownload(link):
 
 link = input("Enter the YouTube video URL: ")
 yt=YutDownload(link)
+file_name = "".join(x for x in titlevideo if x.isalnum()) + '.mp3'
 
 # ----- Convert to MP3
 
@@ -38,9 +39,9 @@ def mp4_to_mp3(mp4, mp3):
   mp4_without_frames.write_audiofile(mp3)
   mp4_without_frames.close()
 
-mp4_to_mp3('video.mp4', "audio.mp3")
+mp4_to_mp3('video.mp4', file_name)
 # ----- Add metaData into audio file
-audiofile = eyed3.load("audio.mp3")
+audiofile = eyed3.load(file_name)
 audiofile.tag.artist = authorvideo
 audiofile.tag.album = "Free For All Comp LP"
 audiofile.tag.album_artist = "Various Artists"
@@ -54,7 +55,7 @@ api_id = '21348' # Your api_id
 api_hash = '64f47180565f69e1eebac574354f902c' # Your api_hash
 phone_number = 'session_1' # Your phone number
 channel_username = 'ketabbazmp3'
-file_name = 'audio.mp3'
+#file_name = titlevideo+'.mp3'
 caption = "نام اثر: " + titlevideo + "\n"+"\n"+"نام کانال: " + authorvideo
 
 client = TelegramClient(phone_number, api_id, api_hash)
