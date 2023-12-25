@@ -30,7 +30,7 @@ def YutDownload(link):
 
 link = input("Enter the YouTube video URL: ")
 yt=YutDownload(link)
-file_name = "".join(x for x in titlevideo if x.isalnum()) + '.mp3'
+file_name = "".join(i for i in titlevideo if i not in "\/:*?<>|") + '.mp3'
 
 # ----- Convert to MP3
 
@@ -52,11 +52,11 @@ audiofile.tag.save()
 print("Uploading to Channel...")
 
 api_id = '21348' # Your api_id
-api_hash = '64f47180565ryejf69e1eebhetrac574354reyjf902c' # Your api_hash
+api_hash = '' # Your api_hash
 phone_number = 'session_1' # Your phone number
 channel_username = 'ketabbazmp3'
 #file_name = titlevideo+'.mp3'
-caption = "نام اثر: " + titlevideo + "\n"+"\n"+"نام کانال: " + authorvideo
+caption = "نام اثر: " + titlevideo + "\n"+"\n"+"نام کانال یوتیوب: " + authorvideo + "\n"+"\n"+"@ketabbazmp3"
 
 client = TelegramClient(phone_number, api_id, api_hash)
 client.connect()
