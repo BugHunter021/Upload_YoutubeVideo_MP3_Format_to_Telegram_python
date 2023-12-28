@@ -57,8 +57,8 @@ audiofile.tag.save()
 # ----- UPLOAD to Channel
 print("Uploading to Channel...")
 
-api_id = '21348' # Your api_id
-api_hash = '64f47180565f69e1eebac574354f902c' # Your api_hash
+api_id = '12345' # Your api_id
+api_hash = '1111111aaaabbbbbccccccdddddd' # Your api_hash
 session_name = 'session_1' 
 channel_username = 'ketabbazmp3'
 #file_name = titlevideo+'.mp3'
