@@ -6,7 +6,7 @@ This script writed by python and uses the 3 way to work :
 * Telethon library
 * Web request
 * Pyrogram library
-* 
+
 ### Requirements
 
     Python 3.x
