@@ -62,7 +62,7 @@ api_hash = '1111111aaaabbbbbccccccdddddd' # Your api_hash
 session_name = 'session_1' 
 channel_username = 'ketabbazmp3'
 #file_name = titlevideo+'.mp3'
-caption = "🎤نام اثر: " + titlevideo + "\n"+"\n"+"🎥نام کانال یوتیوب: " + authorvideo + "\n"+"\n"+"@ketabbazmp3"
+caption = "🎤Title: " + titlevideo + "\n"+"\n"+"🎥Youtube Channle: " + authorvideo + "\n"+"\n"+"@"+channel_username
 
 app = Client('my_account', api_id, api_hash)
 app.connect()
