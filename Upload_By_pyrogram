@@ -1,9 +1,9 @@
-!pip install moviepy
-!pip install pytube
-!pip install eyed3
+#!pip install moviepy
+#!pip install pytube
+#!pip install eyed3
 #!pip install telethon
-!pip install tgcrypto
-!pip install pyrogram
+#!pip install tgcrypto
+#!pip install pyrogram
 
 import requests
 import os
