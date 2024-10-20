@@ -49,6 +49,7 @@ this script contain by 3 block code:
 
 ### Note
 
+
 * This script requires a persistent internet connection.
 * Ensure sufficient local storage for temporary file downloads.
 * Be aware of Telegram's rate limits to avoid being temporarily banned.
